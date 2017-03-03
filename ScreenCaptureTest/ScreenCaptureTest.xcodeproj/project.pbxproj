@@ -7,9 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DF026EC514E0153B00AA9DFD /* DSCapture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF026EC014E014F900AA9DFD /* DSCapture.framework */; };
-		DF026EC914E0155D00AA9DFD /* DSCapture.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = DF026EC014E014F900AA9DFD /* DSCapture.framework */; };
-		DF8EE2A214D1BB2E0011BD68 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF8EE2A114D1BB2E0011BD68 /* Cocoa.framework */; };
+		BC7E18AF1E695430008CAF9A /* AppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7E188D1E6952BF008CAF9A /* AppKit.framework */; };
+		BCC2D17E1E69547C006DA46A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BCC2D17D1E69547C006DA46A /* Foundation.framework */; };
+		BCC2D1801E695487006DA46A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7E18831E69518A008CAF9A /* Cocoa.framework */; };
+		BCC2D1811E6954A3006DA46A /* DSCapture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7E188C1E695221008CAF9A /* DSCapture.framework */; };
 		DF8EE2AC14D1BB2E0011BD68 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF8EE2AA14D1BB2E0011BD68 /* InfoPlist.strings */; };
 		DF8EE2AE14D1BB2E0011BD68 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DF8EE2AD14D1BB2E0011BD68 /* main.m */; };
 		DF8EE2B214D1BB2E0011BD68 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = DF8EE2B014D1BB2E0011BD68 /* Credits.rtf */; };
@@ -18,18 +19,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		DF026EBF14E014F900AA9DFD /* PBXContainerItemProxy */ = {
+		BC7E188B1E695221008CAF9A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = DF026EB814E014F900AA9DFD /* DSCapture.xcodeproj */;
+			containerPortal = BC7E18871E695220008CAF9A /* DSCapture.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = DF026E7A14E0144500AA9DFD;
-			remoteInfo = DSCapture;
-		};
-		DF026EC614E0153E00AA9DFD /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = DF026EB814E014F900AA9DFD /* DSCapture.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = DF026E7914E0144500AA9DFD;
 			remoteInfo = DSCapture;
 		};
 /* End PBXContainerItemProxy section */
@@ -41,18 +35,19 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				DF026EC914E0155D00AA9DFD /* DSCapture.framework in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		DF026EB814E014F900AA9DFD /* DSCapture.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DSCapture.xcodeproj; path = ../DSCapture/DSCapture.xcodeproj; sourceTree = "<group>"; };
+		BC7E187D1E695064008CAF9A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		BC7E18831E69518A008CAF9A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		BC7E18851E69518F008CAF9A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/CoreFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		BC7E18871E695220008CAF9A /* DSCapture.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = DSCapture.xcodeproj; path = ../DSCapture/DSCapture.xcodeproj; sourceTree = "<group>"; };
+		BC7E188D1E6952BF008CAF9A /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/AppKit.framework; sourceTree = DEVELOPER_DIR; };
+		BCC2D17D1E69547C006DA46A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.12.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		DF8EE29D14D1BB2E0011BD68 /* ScreenCaptureTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenCaptureTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF8EE2A114D1BB2E0011BD68 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		DF8EE2A414D1BB2E0011BD68 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
-		DF8EE2A614D1BB2E0011BD68 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		DF8EE2A914D1BB2E0011BD68 /* ScreenCaptureTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScreenCaptureTest-Info.plist"; sourceTree = "<group>"; };
 		DF8EE2AB14D1BB2E0011BD68 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		DF8EE2AD14D1BB2E0011BD68 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -68,18 +63,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF026EC514E0153B00AA9DFD /* DSCapture.framework in Frameworks */,
-				DF8EE2A214D1BB2E0011BD68 /* Cocoa.framework in Frameworks */,
+				BCC2D1811E6954A3006DA46A /* DSCapture.framework in Frameworks */,
+				BCC2D1801E695487006DA46A /* Cocoa.framework in Frameworks */,
+				BCC2D17E1E69547C006DA46A /* Foundation.framework in Frameworks */,
+				BC7E18AF1E695430008CAF9A /* AppKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		DF026EB914E014F900AA9DFD /* Products */ = {
+		BC7E18881E695220008CAF9A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				DF026EC014E014F900AA9DFD /* DSCapture.framework */,
+				BC7E188C1E695221008CAF9A /* DSCapture.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -87,10 +84,10 @@
 		DF8EE29214D1BB2E0011BD68 = {
 			isa = PBXGroup;
 			children = (
+				BC7E18871E695220008CAF9A /* DSCapture.xcodeproj */,
 				DF8EE2A714D1BB2E0011BD68 /* ScreenCaptureTest */,
 				DF8EE2A014D1BB2E0011BD68 /* Frameworks */,
 				DF8EE29E14D1BB2E0011BD68 /* Products */,
-				DF026EB814E014F900AA9DFD /* DSCapture.xcodeproj */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,7 +102,11 @@
 		DF8EE2A014D1BB2E0011BD68 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DF8EE2A114D1BB2E0011BD68 /* Cocoa.framework */,
+				BCC2D17D1E69547C006DA46A /* Foundation.framework */,
+				BC7E188D1E6952BF008CAF9A /* AppKit.framework */,
+				BC7E18851E69518F008CAF9A /* CoreFoundation.framework */,
+				BC7E18831E69518A008CAF9A /* Cocoa.framework */,
+				BC7E187D1E695064008CAF9A /* Foundation.framework */,
 				DF8EE2A314D1BB2E0011BD68 /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -114,8 +115,6 @@
 		DF8EE2A314D1BB2E0011BD68 /* Other Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DF8EE2A414D1BB2E0011BD68 /* AppKit.framework */,
-				DF8EE2A614D1BB2E0011BD68 /* Foundation.framework */,
 			);
 			name = "Other Frameworks";
 			sourceTree = "<group>";
@@ -158,7 +157,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				DF026EC714E0153E00AA9DFD /* PBXTargetDependency */,
 			);
 			name = ScreenCaptureTest;
 			productName = ScreenCaptureTest;
@@ -185,8 +183,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = DF026EB914E014F900AA9DFD /* Products */;
-					ProjectRef = DF026EB814E014F900AA9DFD /* DSCapture.xcodeproj */;
+					ProductGroup = BC7E18881E695220008CAF9A /* Products */;
+					ProjectRef = BC7E18871E695220008CAF9A /* DSCapture.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -197,11 +195,11 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		DF026EC014E014F900AA9DFD /* DSCapture.framework */ = {
+		BC7E188C1E695221008CAF9A /* DSCapture.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = DSCapture.framework;
-			remoteRef = DF026EBF14E014F900AA9DFD /* PBXContainerItemProxy */;
+			remoteRef = BC7E188B1E695221008CAF9A /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -230,14 +228,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		DF026EC714E0153E00AA9DFD /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = DSCapture;
-			targetProxy = DF026EC614E0153E00AA9DFD /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		DF8EE2AA14D1BB2E0011BD68 /* InfoPlist.strings */ = {
@@ -313,11 +303,13 @@
 		DF8EE2BC14D1BB2F0011BD68 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ScreenCaptureTest/ScreenCaptureTest-Prefix.pch";
 				INFOPLIST_FILE = "ScreenCaptureTest/ScreenCaptureTest-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -325,11 +317,13 @@
 		DF8EE2BD14D1BB2F0011BD68 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ScreenCaptureTest/ScreenCaptureTest-Prefix.pch";
 				INFOPLIST_FILE = "ScreenCaptureTest/ScreenCaptureTest-Info.plist";
-				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

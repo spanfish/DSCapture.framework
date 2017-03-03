@@ -1,14 +1,13 @@
 //
 //  main.m
-//  ScreenCaptureTest
+//  example
 //
-//  Created by 김 동성 on 12. 1. 27..
-//  Copyright (c) 2012년 __MyCompanyName__. All rights reserved.
+//  Created by xiangwei wang on 2017/03/03.
+//  Copyright © 2017年 xiangwei wang. All rights reserved.
 //
 
 #import <Cocoa/Cocoa.h>
 
-int main(int argc, char *argv[])
-{
-    return NSApplicationMain(argc, (const char **)argv);
+int main(int argc, const char * argv[]) {
+    return NSApplicationMain(argc, argv);
 }

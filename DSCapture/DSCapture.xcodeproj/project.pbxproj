@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		DF026E7E14E0144500AA9DFD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF026E7D14E0144500AA9DFD /* Cocoa.framework */; };
+		BC7E187F1E695163008CAF9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF026E8214E0144500AA9DFD /* Foundation.framework */; };
+		BC7E18811E69517B008CAF9A /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC7E18801E69517B008CAF9A /* CoreFoundation.framework */; };
+		BC7E18821E695181008CAF9A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF026E7D14E0144500AA9DFD /* Cocoa.framework */; };
 		DF026E8814E0144500AA9DFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DF026E8614E0144500AA9DFD /* InfoPlist.strings */; };
 		DF026E9314E0146500AA9DFD /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = DF026E9214E0146500AA9DFD /* LICENSE */; };
 		DF026EA414E0148500AA9DFD /* DSCapture.h in Headers */ = {isa = PBXBuildFile; fileRef = DF026E9414E0148500AA9DFD /* DSCapture.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -29,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BC7E18801E69517B008CAF9A /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		DF026E7A14E0144500AA9DFD /* DSCapture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DSCapture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF026E7D14E0144500AA9DFD /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		DF026E8014E0144500AA9DFD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -61,7 +64,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DF026E7E14E0144500AA9DFD /* Cocoa.framework in Frameworks */,
+				BC7E18821E695181008CAF9A /* Cocoa.framework in Frameworks */,
+				BC7E18811E69517B008CAF9A /* CoreFoundation.framework in Frameworks */,
+				BC7E187F1E695163008CAF9A /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +93,7 @@
 		DF026E7C14E0144500AA9DFD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BC7E18801E69517B008CAF9A /* CoreFoundation.framework */,
 				DF026E7D14E0144500AA9DFD /* Cocoa.framework */,
 				DF026E7F14E0144500AA9DFD /* Other Frameworks */,
 			);
@@ -295,6 +301,7 @@
 		DF026E9014E0144500AA9DFD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
@@ -309,6 +316,7 @@
 		DF026E9114E0144500AA9DFD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				FRAMEWORK_VERSION = A;
